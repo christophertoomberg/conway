@@ -12,6 +12,6 @@ git clone <project link>
 live-server
 ~~~
 
-That's it! Just open the link you got from live-server (usually http://127.0.0.1:8080/) in your favourite browser and enjoy.
+That's it! Just open the link you got from the server in your favourite browser and enjoy.
 
 If you like to watch the world burn, you can also just open the index.html file without running a local server.
