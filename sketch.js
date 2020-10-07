@@ -1,4 +1,5 @@
-// So that ESLint can be happy about the p5.
+// So that ESLint can be happy about the p5 (draw and setup functions),
+// Maybe it's not useul to use Eslint rules for p5js.
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable no-plusplus */
@@ -49,6 +50,8 @@ function countAliveNeighbours(_grid, x, y) {
 }
 
 function setup() {
+	const width = windowWidth;
+	const height = windowHeight;
 	createCanvas(2000, 2000);
 	cols = width / resolution;
 	rows = height / resolution;
