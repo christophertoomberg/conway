@@ -16,9 +16,6 @@ function create2DArray(rows, cols){
 	return array;
 }
 
-function sleep(ms) {
-	return new Promise(resolve => setTimeout(resolve, ms));
-  }
 
 // If cell to be counted would be out of bounds, extends the counting to the other side.
 // Adapted from a Coding Train video.
@@ -43,9 +40,9 @@ let rows;
 let resolution = 20;
 
 function setup() {
-	createCanvas(2000, 2000);
-	cols = width / resolution;
-	rows = height / resolution;
+	createCanvas(windowWidth, windowWidth);
+	cols = Math.round(width / resolution);
+	rows = Math.round(height / resolution);
 	grid = createGrid(cols, rows);
 }
 
@@ -66,7 +63,6 @@ function draw() {
 	
 	for (let i = 0; i < cols; i++) {
 		for (let j = 0; j < rows; j++) {
-			//sleep(20);
 			let cell = grid[i][j];
 			let neighbours = countAliveNeighbours(grid, i, j);
 
@@ -82,7 +78,6 @@ function draw() {
 		}
 	}
 	grid = tempArray;
-
 }
 
 
