@@ -1,6 +1,6 @@
 # Conway's Game of Life!
 
-
+---> [Deployed version](https://conway.cht00m.vercel.app/) <---
 > Read about the game here: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 To run on your local machine:
@@ -26,7 +26,7 @@ If you like to watch the world burn, you can also just open the index.html file 
 
 - [ ] Fit the game nicely on screen
 - [ ] Allow the user to draw with the mouse a starting shape
-- [ ] Deploy the game
+- [x] Deploy the game
 - [ ] Make each cell an object to keep track of its state? + visualization
 - [ ] Floating point instead of 0s and 1s
 - [ ] Circles?
